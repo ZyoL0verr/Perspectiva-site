@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Perspectiva — Sob Outro Olhar">
+    <meta name="description" content="Perspectiva — Sob Outro Olhar. Histórias sensíveis, visuais e interativas sobre pessoas e realidades.">
+    <meta name="theme-color" content="#f6f1eb">
+    <meta property="og:title" content="Perspectiva | Sob Outro Olhar">
+    <meta property="og:description" content="Nem tudo é o que parece. Conheça AKIN: Sob Outro Olhar.">
+    <meta property="og:type" content="website">
     <title>Perspectiva | Sob Outro Olhar</title>
+    <link rel="icon" href="logo persp.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
 
     <header class="navbar">
-        <a href="#inicio" class="logo">
-            <img src="logo persp.png" alt="Logo da Perspectiva">
+        <a href="#inicio" class="logo" aria-label="Perspectiva — início">
+            <img src="logo persp.png" alt="" width="80" height="80">
             <img src="tipografia persp.png" alt="Perspectiva">
         </a>
 
-        <nav>
+        <nav id="menu" aria-label="Principal">
             <a href="#sobre">Sobre</a>
             <a href="#projeto">Projeto</a>
             <a href="#identidade">Identidade</a>
             <a href="#contato">Contato</a>
         </nav>
 
-        <button class="menu-btn" aria-label="Abrir menu">☰</button>
+        <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span>
+        </button>
     </header>
 
-    <main>
+    <main id="conteudo">
         <section id="inicio" class="hero">
             <div class="hero-content">
-                <p class="eyebrow">MOSTRANDO O MUNDO SOB OUTRA PERSPECTIVA</p>
+                <p class="eyebrow">Mostrando o mundo sob outra perspectiva</p>
                 <h1>Nem tudo é<br><em>o que parece.</em></h1>
                 <p class="hero-text">
                     A Perspectiva nasce para transformar a forma como enxergamos
                     histórias, pessoas e realidades.
                 </p>
-                <a href="#projeto" class="button">Conheça o projeto <span>↗</span></a>
+                <a href="#projeto" class="button">Conheça o projeto <span aria-hidden="true">↗</span></a>
             </div>
 
-            <div class="hero-art">
+            <div class="hero-art" aria-hidden="true">
                 <div class="circle circle-one"></div>
                 <div class="circle circle-two"></div>
                 <div class="butterfly">✦</div>
                 <div class="eye"></div>
-                <span class="art-caption">SOB OUTRO OLHAR</span>
+                <span class="art-caption">Sob outro olhar</span>
             </div>
         </section>
 
         <section id="sobre" class="about section">
-            <div class="section-label">01 / SOBRE</div>
+            <div class="section-label">01 / Sobre</div>
             <div class="about-grid">
                 <div>
                     <h2>Olhar é mais<br>do que <em>ver.</em></h2>
@@ -70,32 +78,32 @@
         </section>
 
         <section id="projeto" class="project section">
-            <div class="section-label">02 / PROJETO</div>
+            <div class="section-label">02 / Projeto</div>
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image" aria-hidden="true">
                     <span>AKIN</span>
-                    <small>SOB OUTRO OLHAR</small>
+                    <small>Sob outro olhar</small>
                 </div>
                 <div class="project-info">
-                    <p class="eyebrow">PROJETO PRINCIPAL</p>
+                    <p class="eyebrow">Projeto principal</p>
                     <h2>AKIN: Sob Outro Olhar</h2>
                     <p>
                         Uma experiência narrativa que aborda o impacto da
                         discriminação estrutural e suas consequências na
                         percepção que um indivíduo possui de si e do mundo.
                     </p>
-                    <div class="tags">
-                        <span>Narrativa</span>
-                        <span>Experiência</span>
-                        <span>Reflexão</span>
-                    </div>
-                    <a href="#" class="text-link">Conhecer AKIN <span>→</span></a>
+                    <ul class="tags">
+                        <li>Narrativa</li>
+                        <li>Experiência</li>
+                        <li>Reflexão</li>
+                    </ul>
+                    <a href="#" class="text-link">Conhecer AKIN <span aria-hidden="true">→</span></a>
                 </div>
             </div>
         </section>
 
         <section id="identidade" class="identity section">
-            <div class="section-label">03 / IDENTIDADE</div>
+            <div class="section-label">03 / Identidade</div>
             <div class="identity-header">
                 <h2>Uma identidade que<br><em>observa.</em></h2>
                 <p>
@@ -106,17 +114,17 @@
 
             <div class="identity-grid">
                 <article>
-                    <div class="identity-symbol">◉</div>
+                    <div class="identity-symbol" aria-hidden="true">◉</div>
                     <h3>Observação</h3>
                     <p>O olhar como convite para questionar aquilo que parece óbvio.</p>
                 </article>
                 <article>
-                    <div class="identity-symbol">✦</div>
+                    <div class="identity-symbol" aria-hidden="true">✦</div>
                     <h3>Transformação</h3>
                     <p>A mudança de perspectiva como ponto de partida para novas possibilidades.</p>
                 </article>
                 <article>
-                    <div class="identity-symbol">⌁</div>
+                    <div class="identity-symbol" aria-hidden="true">⌁</div>
                     <h3>Singularidade</h3>
                     <p>As imperfeições e diferenças que tornam cada história única.</p>
                 </article>
@@ -124,28 +132,28 @@
         </section>
 
         <section class="quote">
-            <div class="quote-mark">“</div>
+            <div class="quote-mark" aria-hidden="true">“</div>
             <blockquote>
                 Às vezes, tudo o que precisamos<br>
                 é olhar de outro lugar.
             </blockquote>
-            <span>— PERSPECTIVA</span>
+            <span>— Perspectiva</span>
         </section>
 
         <section id="contato" class="contact section">
-            <div class="section-label">04 / CONTATO</div>
+            <div class="section-label">04 / Contato</div>
             <div class="contact-content">
                 <h2>Vamos olhar<br><em>juntos?</em></h2>
                 <p>Entre em contato para conhecer mais sobre o projeto.</p>
-                <a href="mailto:contato@perspectiva.com" class="button">Entrar em contato <span>↗</span></a>
+                <a href="mailto:contato@perspectiva.com" class="button">Entrar em contato <span aria-hidden="true">↗</span></a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="logo">
-            <img src="logo persp.png" alt="Logo da Perspectiva">
-        </div>
+        <a href="#inicio" class="logo" aria-label="Voltar ao topo">
+            <img src="logo persp.png" alt="Perspectiva">
+        </a>
         <p>© 2026 Perspectiva Games</p>
     </footer>
 
