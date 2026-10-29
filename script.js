@@ -29,4 +29,23 @@
         });
     }, { rootMargin: '-45% 0px -50% 0px' });
     sections.forEach(s => io.observe(s));
+
+    // Ano do rodapé
+    const ano = document.getElementById('ano');
+    if (ano) ano.textContent = new Date().getFullYear();
+
+    // O olho do hero acompanha o cursor (ou o dedo): o site "olha" para você
+    const eye = document.querySelector('.eye');
+    const iris = document.getElementById('iris');
+    if (eye && iris && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const maxX = 42, maxY = 20;
+        window.addEventListener('pointermove', e => {
+            const r = eye.getBoundingClientRect();
+            const dx = (e.clientX - (r.left + r.width / 2)) / (window.innerWidth / 2);
+            const dy = (e.clientY - (r.top + r.height / 2)) / (window.innerHeight / 2);
+            const x = Math.max(-1, Math.min(1, dx)) * maxX;
+            const y = Math.max(-1, Math.min(1, dy)) * maxY;
+            iris.style.transform = `translate(${x}px, ${y}px)`;
+        }, { passive: true });
+    }
 })();

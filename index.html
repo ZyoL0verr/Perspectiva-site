@@ -6,8 +6,11 @@
     <meta name="description" content="Perspectiva — Sob Outro Olhar. Histórias sensíveis, visuais e interativas sobre pessoas e realidades.">
     <meta name="theme-color" content="#f6f1eb">
     <meta property="og:title" content="Perspectiva | Sob Outro Olhar">
-    <meta property="og:description" content="Nem tudo é o que parece. Conheça AKIN: Sob Outro Olhar.">
+    <meta property="og:description" content="Nem tudo é o que parece. Conheça AKIN: Sob Outro Olhar e Nextdoor.">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <!-- Adicione uma imagem 1200x630 para pré-visualização em redes sociais:
+    <meta property="og:image" content="https://SEU-DOMINIO/og-image.png"> -->
     <title>Perspectiva | Sob Outro Olhar</title>
     <link rel="icon" href="logo persp.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,14 +23,14 @@
 
     <header class="navbar">
         <a href="#inicio" class="logo" aria-label="Perspectiva — início">
-            <img src="logo persp.png" alt="" width="80" height="80">
+            <img src="logo persp.png" alt="" width="72" height="72">
             <img src="tipografia persp.png" alt="Perspectiva">
         </a>
 
         <nav id="menu" aria-label="Principal">
             <a href="#sobre">Sobre</a>
-            <a href="#projeto">Projeto</a>
-            <a href="#identidade">Identidade</a>
+            <a href="#projeto">AKIN</a>
+            <a href="#nextdoor">Nextdoor</a>
             <a href="#contato">Contato</a>
         </nav>
 
@@ -42,31 +45,41 @@
                 <p class="eyebrow">Mostrando o mundo sob outra perspectiva</p>
                 <h1>Nem tudo é<br><em>o que parece.</em></h1>
                 <p class="hero-text">
-                    A Perspectiva nasce para transformar a forma como enxergamos
+                    A Perspectiva transforma a forma como enxergamos
                     histórias, pessoas e realidades.
                 </p>
-                <a href="#projeto" class="button">Conheça o projeto <span aria-hidden="true">↗</span></a>
+                <a href="#projeto" class="button">Conheça os projetos <span aria-hidden="true">↗</span></a>
             </div>
 
             <div class="hero-art" aria-hidden="true">
-                <div class="circle circle-one"></div>
-                <div class="circle circle-two"></div>
-                <div class="butterfly">✦</div>
-                <div class="eye"></div>
+                <div class="circle"></div>
+                <svg class="eye" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <clipPath id="eye-clip"><path d="M20 130Q200-10 380 130Q200 270 20 130Z"/></clipPath>
+                    </defs>
+                    <path d="M20 130Q200-10 380 130Q200 270 20 130Z" fill="#fffdf9"/>
+                    <g clip-path="url(#eye-clip)">
+                        <g id="iris">
+                            <circle cx="200" cy="130" r="68" fill="#5b4030"/>
+                            <circle cx="200" cy="130" r="48" fill="none" stroke="#7a5f4c" stroke-width="1.5"/>
+                            <circle cx="200" cy="130" r="26" fill="#171412"/>
+                            <circle cx="184" cy="114" r="8" fill="#fffdf9"/>
+                        </g>
+                    </g>
+                    <path d="M20 130Q200-10 380 130Q200 270 20 130Z" fill="none" stroke="#171412" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
                 <span class="art-caption">Sob outro olhar</span>
             </div>
         </section>
 
         <section id="sobre" class="about section">
-            <div class="section-label">01 / Sobre</div>
+            <p class="section-label">Sobre</p>
             <div class="about-grid">
-                <div>
-                    <h2>Olhar é mais<br>do que <em>ver.</em></h2>
-                </div>
+                <h2>Olhar é mais do que ver.</h2>
                 <div>
                     <p class="large-text">
-                        A Perspectiva é um projeto que busca explorar temas humanos
-                        através de uma abordagem sensível, visual e interativa.
+                        A Perspectiva é um projeto que explora temas humanos
+                        de forma sensível, visual e interativa.
                     </p>
                     <p>
                         Acreditamos que mudar a perspectiva pode mudar a maneira
@@ -78,7 +91,7 @@
         </section>
 
         <section id="projeto" class="project section">
-            <div class="section-label">02 / Projeto</div>
+            <p class="section-label">Projeto</p>
             <div class="project-card">
                 <div class="project-image" aria-hidden="true">
                     <span>AKIN</span>
@@ -88,73 +101,75 @@
                     <p class="eyebrow">Projeto principal</p>
                     <h2>AKIN: Sob Outro Olhar</h2>
                     <p>
-                        Uma experiência narrativa que aborda o impacto da
+                        Uma experiência narrativa sobre o impacto da
                         discriminação estrutural e suas consequências na
-                        percepção que um indivíduo possui de si e do mundo.
+                        percepção que uma pessoa tem de si e do mundo.
                     </p>
                     <ul class="tags">
                         <li>Narrativa</li>
                         <li>Experiência</li>
                         <li>Reflexão</li>
                     </ul>
-                    <a href="#" class="text-link">Conhecer AKIN <span aria-hidden="true">→</span></a>
+                    <a href="https://perspectivagames.itch.io/akin" class="text-link" target="_blank" rel="noopener noreferrer">Saber mais sobre AKIN</a>
                 </div>
             </div>
         </section>
 
-        <section id="identidade" class="identity section">
-            <div class="section-label">03 / Identidade</div>
-            <div class="identity-header">
-                <h2>Uma identidade que<br><em>observa.</em></h2>
-                <p>
-                    Cada elemento visual foi pensado para representar
-                    transformação, observação e singularidade.
-                </p>
-            </div>
-
-            <div class="identity-grid">
-                <article>
-                    <div class="identity-symbol" aria-hidden="true">◉</div>
-                    <h3>Observação</h3>
-                    <p>O olhar como convite para questionar aquilo que parece óbvio.</p>
-                </article>
-                <article>
-                    <div class="identity-symbol" aria-hidden="true">✦</div>
-                    <h3>Transformação</h3>
-                    <p>A mudança de perspectiva como ponto de partida para novas possibilidades.</p>
-                </article>
-                <article>
-                    <div class="identity-symbol" aria-hidden="true">⌁</div>
-                    <h3>Singularidade</h3>
-                    <p>As imperfeições e diferenças que tornam cada história única.</p>
-                </article>
+        <section id="nextdoor" class="project nextdoor section">
+            <p class="section-label">Nextdoor</p>
+            <div class="project-card">
+                <div class="project-image" aria-hidden="true">
+                    <span>Nextdoor</span>
+                    <small>Perspectiva Games</small>
+                </div>
+                <div class="project-info">
+                    <p class="eyebrow">Outro projeto</p>
+                    <h2>Nextdoor</h2>
+                    <p>
+                        Mais uma experiência da Perspectiva Games, feita para
+                        ser jogada e sentida. Conheça a história no itch.io.
+                    </p>
+                    <ul class="tags">
+                        <li>Jogo</li>
+                        <li>Experiência</li>
+                    </ul>
+                    <a href="https://perspectivagames.itch.io/next-door" class="text-link" target="_blank" rel="noopener noreferrer">Saber mais sobre Nextdoor</a>
+                </div>
             </div>
         </section>
 
         <section class="quote">
-            <div class="quote-mark" aria-hidden="true">“</div>
             <blockquote>
-                Às vezes, tudo o que precisamos<br>
-                é olhar de outro lugar.
+                <p>Às vezes, tudo o que precisamos<br>é olhar de outro lugar.</p>
+                <footer>Perspectiva</footer>
             </blockquote>
-            <span>— Perspectiva</span>
         </section>
 
         <section id="contato" class="contact section">
-            <div class="section-label">04 / Contato</div>
+            <p class="section-label">Contato</p>
             <div class="contact-content">
-                <h2>Vamos olhar<br><em>juntos?</em></h2>
-                <p>Entre em contato para conhecer mais sobre o projeto.</p>
-                <a href="mailto:contato@perspectiva.com" class="button">Entrar em contato <span aria-hidden="true">↗</span></a>
+                <h2>Vamos olhar juntos?</h2>
+                <p>Escreva para conhecer mais sobre o projeto ou nos acompanhe nas redes.</p>
+                <div class="actions">
+                    <a href="mailto:by.perspectiva@gmail.com" class="button">by.perspectiva@gmail.com <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/perspectiva-games/" class="button button-outline" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.instagram.com/perspectiva.games/" class="button button-outline" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <a href="#inicio" class="logo" aria-label="Voltar ao topo">
-            <img src="logo persp.png" alt="Perspectiva">
+            <img src="logo persp.png" alt="Perspectiva" width="56" height="56">
         </a>
-        <p>© 2026 Perspectiva Games</p>
+        <ul class="footer-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projeto">AKIN</a></li>
+            <li><a href="#nextdoor">Nextdoor</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <p>© <span id="ano">2026</span> Perspectiva Games</p>
     </footer>
 
     <script src="script.js"></script>
